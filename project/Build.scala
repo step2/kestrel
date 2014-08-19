@@ -22,6 +22,8 @@ object Kestrel extends Build {
     logBuffered in Test := false,
     parallelExecution in Test := false,
 
+    resolvers += "Sonatype OSS Snapshots" at "https://oss.sonatype.org/content/groups/scala-tools",
+
     libraryDependencies ++= Seq(
       "com.twitter" % "ostrich" % "8.2.9",
       "com.twitter" %% "naggati" % "4.1.0",
